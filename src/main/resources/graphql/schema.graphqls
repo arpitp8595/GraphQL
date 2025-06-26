@@ -1,0 +1,11 @@
+type Query {
+    allCountries: [Country]
+    countryByCode(code: String!): Country
+}
+
+type Country {
+    code: String
+    name: String
+    capital: String
+    currency: String
+}
