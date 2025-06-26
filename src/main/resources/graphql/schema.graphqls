@@ -1,6 +1,6 @@
-type Query {
-    allCountries: [Country]
-    countryByCode(code: String!): Country
+input CountryInput {
+    name: String
+    code: String
 }
 
 type Country {
@@ -8,4 +8,40 @@ type Country {
     name: String
     capital: String
     currency: String
+}
+
+type Query {
+    allCountries: [Country]
+}
+
+
+input UserRequest {
+    name: String
+    job: String
+}
+
+type UserResponse {
+    name: String
+    job: String
+    id: String
+    createdAt: String
+}
+
+input JsonPostRequest {
+    title: String
+    body: String
+    userId: Int
+}
+
+type JsonPostResponse {
+    id: Int
+    title: String
+    body: String
+    userId: Int
+}
+
+type Mutation {
+    getCountryByInput(request: CountryInput): Country
+    createUser(input: UserRequest): UserResponse
+    createPost(request: JsonPostRequest): JsonPostResponse
 }

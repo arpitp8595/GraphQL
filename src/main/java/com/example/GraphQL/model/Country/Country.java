@@ -1,8 +1,4 @@
-package com.example.GraphQL.model;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+package com.example.GraphQL.model.Country;
 
 public class Country {
     private String code;
