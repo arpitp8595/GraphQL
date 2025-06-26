@@ -1,6 +1,6 @@
 package com.example.GraphQL.repository;
 
-import com.example.GraphQL.model.Country;
+import com.example.GraphQL.model.Country.Country;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
