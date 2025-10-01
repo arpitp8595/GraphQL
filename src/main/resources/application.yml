@@ -1,11 +1,17 @@
 spring:
   application:
-    name: GraphQL
+    name: payment-graphql-svc
   graphql:
     schema:
       locations: classpath:graphql/
     graphiql:
       enabled: true
+      path: /graphiql
 
 server:
   port: 8080
+
+logging:
+  level:
+    com.example: DEBUG
+    org.springframework.graphql: DEBUG

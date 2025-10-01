@@ -1,8 +1,8 @@
-package com.example.GraphQL.service;
+package com.example.service;
 
-import com.example.GraphQL.model.Country.Country;
-import com.example.GraphQL.model.Country.CountryRequest;
-import com.example.GraphQL.model.Country.RestCountryResponse;
+import com.example.model.Country.Country;
+import com.example.model.Country.CountryRequest;
+import com.example.model.Country.RestCountryResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

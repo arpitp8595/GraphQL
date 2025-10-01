@@ -1,10 +1,10 @@
-package com.example.GraphQL.service.impl;
+package com.example.service.impl;
 
-import com.example.GraphQL.controller.CountryQueryController;
-import com.example.GraphQL.model.Country.Country;
-import com.example.GraphQL.model.Country.CountryRequest;
-import com.example.GraphQL.model.Country.RestCountryResponse;
-import com.example.GraphQL.service.ApiCountriesRepository;
+import com.example.controller.CountryQueryController;
+import com.example.model.Country.Country;
+import com.example.model.Country.CountryRequest;
+import com.example.model.Country.RestCountryResponse;
+import com.example.service.ApiCountriesRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;

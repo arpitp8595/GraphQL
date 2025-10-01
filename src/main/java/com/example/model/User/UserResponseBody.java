@@ -1,4 +1,4 @@
-package com.example.GraphQL.model.User;
+package com.example.model.User;
 
 public class UserResponseBody {
     private String name;

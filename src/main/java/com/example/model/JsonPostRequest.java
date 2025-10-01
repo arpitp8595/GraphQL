@@ -1,18 +1,9 @@
-package com.example.GraphQL.model;
+package com.example.model;
 
-public class JsonPostResponse {
-    private int id;
+public class JsonPostRequest {
     private String title;
     private String body;
     private int userId;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getTitle() {
         return title;

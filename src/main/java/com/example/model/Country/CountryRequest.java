@@ -1,4 +1,4 @@
-package com.example.GraphQL.model.Country;
+package com.example.model.Country;
 
 public class CountryRequest {
     private String name;

@@ -1,7 +1,7 @@
-package com.example.GraphQL.service;
+package com.example.service;
 
-import com.example.GraphQL.model.JsonPostRequest;
-import com.example.GraphQL.model.JsonPostResponse;
+import com.example.model.JsonPostRequest;
+import com.example.model.JsonPostResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

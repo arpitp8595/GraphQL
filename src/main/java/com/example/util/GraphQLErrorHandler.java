@@ -1,4 +1,4 @@
-package com.example.GraphQL.util;
+package com.example.util;
 
 import graphql.GraphQLError;
 import graphql.GraphqlErrorBuilder;

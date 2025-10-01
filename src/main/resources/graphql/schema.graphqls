@@ -12,6 +12,8 @@ type Country {
 
 type Query {
     allCountries: [Country]
+    # GraphQL requires at least one query
+    health: String
 }
 
 
@@ -44,4 +46,30 @@ type Mutation {
     getCountryByInput(request: CountryInput): Country
     createUser(input: UserRequest): UserResponse
     createPost(request: JsonPostRequest): JsonPostResponse
+
+    processWithLastName(input: CardLastNameInput!): ProcessResult!
+    processWithAccount(input: CardAccountInput!): ProcessResult!
+    processWithEmail(input: CardEmailInput!): ProcessResult!
+}
+
+input CardLastNameInput {
+    cardNumber: String!
+    lastName: String!
+}
+
+input CardAccountInput {
+    cardNumber: String!
+    accountNumber: String!
+}
+
+input CardEmailInput {
+    cardNumber: String!
+    email: String!
+}
+
+type ProcessResult {
+    success: Boolean!
+    message: String!
+    transactionId: String
+    status: String!
 }

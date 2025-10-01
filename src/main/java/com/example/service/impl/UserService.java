@@ -1,9 +1,9 @@
-package com.example.GraphQL.service.impl;
+package com.example.service.impl;
 
-import com.example.GraphQL.controller.CountryQueryController;
-import com.example.GraphQL.model.JsonPostRequest;
-import com.example.GraphQL.model.JsonPostResponse;
-import com.example.GraphQL.service.JsonPlaceholderClient;
+import com.example.controller.CountryQueryController;
+import com.example.model.JsonPostRequest;
+import com.example.model.JsonPostResponse;
+import com.example.service.JsonPlaceholderClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

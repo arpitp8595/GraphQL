@@ -1,15 +1,13 @@
-package com.example.GraphQL.controller;
+package com.example.controller;
 
-import com.example.GraphQL.model.JsonPostRequest;
-import com.example.GraphQL.model.JsonPostResponse;
-import com.example.GraphQL.model.User.UserRequestBody;
-import com.example.GraphQL.model.User.UserResponseBody;
-import com.example.GraphQL.service.impl.UserService;
+import com.example.model.JsonPostRequest;
+import com.example.model.JsonPostResponse;
+import com.example.service.impl.UserService;
+import com.example.model.Country.Country;
+import com.example.model.Country.CountryRequest;
+import com.example.service.impl.CountryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.example.GraphQL.model.Country.Country;
-import com.example.GraphQL.model.Country.CountryRequest;
-import com.example.GraphQL.service.impl.CountryService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
