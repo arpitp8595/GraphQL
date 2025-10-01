@@ -1,0 +1,22 @@
+curl --location 'http://localhost:8080/graphql' \
+--header 'Content-Type: application/json' \
+--data '{
+    "query": "mutation { processWithLastName(input: { cardNumber: \"1234567890123456\", lastName: \"Smith\" }) { success message transactionId status } }"
+}'
+
+curl --location 'http://localhost:8080/graphql' \
+--header 'Content-Type: application/json' \
+--data '{"query":"mutation {\n  processWithLastName(input: {\n    cardNumber: \"1234567890123456\"\n    lastName: \"Smith\"\n  }) {\n    success\n    message\n    transactionId\n    status\n  }\n}","variables":{}}'
+
+
+
+-----------------------------------------------------------------------------
+curl --location 'http://localhost:8080/graphql' \
+--header 'Content-Type: application/json' \
+--data '{
+    "query": "mutation { processWithAccount(input: { cardNumber: \"1234567890123456\", accountNumber: \"ACC12345678\" }) { success message transactionId status } }"
+}'
+
+curl --location 'http://localhost:8080/graphql' \
+--header 'Content-Type: application/json' \
+--data '{"query":"mutation {\n  processWithAccount(input: {\n    cardNumber: \"1234567890123456\"\n    accountNumber: \"ACC12345678\"\n  }) {\n    success\n    message\n    transactionId\n    status\n  }\n}","variables":{}}'
